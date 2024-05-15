@@ -1,3 +1,33 @@
 body {
   background-color: cadetblue;
 }
+
+.machine1,
+.machine2,
+.machine3 {
+  margin-top: 30px;
+  background-color: rgb(145, 70, 116);
+  width: 300px;
+  height: 500px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.symbol {
+  font-size: 50px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  animation: slide 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-30%);
+  }
+  100% {
+    transform: translateY(10%);
+  }
+}
